@@ -1,4 +1,4 @@
-# Flappy_Bird_with_AI
+# Flappy Bird with AI
 Classic 'Flappy bird' game with NEAT neural network control implemented.
 
 ## Instruction
