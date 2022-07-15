@@ -1,5 +1,4 @@
 import pygame
-import neat
 import time
 import os
 import random
@@ -33,7 +32,7 @@ class Game:
         self.today_score = 0 # the best score for today
         # the best score ever
         try:
-            score_file = open("score_file.txt", "rt")
+            score_file = open(SCORE_PATH, "rt")
             self.the_best_score = int(score_file.read())
             self.score_from_file = True
             score_file.close()
@@ -95,7 +94,7 @@ class Game:
                     self.the_best_score = self.today_score
                     if self.score_from_file:
                         try:
-                            score_file = open("score_file.txt", "wt")
+                            score_file = open(SCORE_PATH, "wt")
                             score_file.write(str(self.the_best_score))
                             score_file.close()
                         except:
