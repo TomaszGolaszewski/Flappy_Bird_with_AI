@@ -3,10 +3,12 @@
 # Classic "Flappy bird" game
 
 import pygame
-import neat
 import time
 import os
 import random
+
+from sys import path
+path.append('.\\src')
 
 from settings import *
 from classes_world import *
