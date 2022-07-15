@@ -8,6 +8,9 @@ import time
 import os
 import random
 
+from sys import path
+path.append('.\\src')
+
 from settings import *
 from classes_world import *
 from classes_game import *
@@ -25,8 +28,9 @@ if __name__ == "__main__":
     pygame.init()
 
     # preparing config file
-    local_dir = os.path.dirname(__file__)
-    config_path = os.path.join(local_dir, "config-feedforward.txt")
+    # local_dir = os.path.dirname(__file__)
+    # config_path = os.path.join(local_dir, "config-feedforward.txt")
+    config_path = os.path.join("src", "config-feedforward.txt")
     config = neat.config.Config(neat.DefaultGenome, neat.DefaultReproduction, neat.DefaultSpeciesSet, neat.DefaultStagnation, config_path)
 
     # preparing population
