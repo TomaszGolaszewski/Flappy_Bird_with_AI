@@ -18,7 +18,7 @@ DRAW_LINES = True # whether to draw lines between birds and pipes or not (only i
 # physics
 VEL_X = 5
 VEL_Y_JUMP = 10.5
-G = 3 # XD # falling acceleration
+G = 3 # falling acceleration
 VEL_ROTATION = 15
 
 # sprites
@@ -30,6 +30,9 @@ pygame.transform.scale2x(pygame.image.load(os.path.join("imgs","bird3.png")))]
 PIPE_IMGS = pygame.transform.scale2x(pygame.image.load(os.path.join("imgs","pipe.png")))
 BASE_IMGS = pygame.transform.scale2x(pygame.image.load(os.path.join("imgs","base.png")))
 BG_IMGS = pygame.transform.scale2x(pygame.image.load(os.path.join("imgs","bg.png")))
+
+# score file
+SCORE_PATH = os.path.join("src","score_file.txt")
 
 # initialize fonts
 pygame.font.init()
